@@ -1,0 +1,18 @@
+.tableau {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 10%;
+}
+
+.tableau th, td {
+    border: 1px solid;
+    padding: 8px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.tableau tr {
+    font-size: 15px;
+    color: aliceblue;
+}
