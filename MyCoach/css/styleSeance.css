@@ -1,18 +1,21 @@
+/* Définition des styles pour une classe appelée "tableau" */
 .tableau {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 10%;
+    display: flex; 
+    justify-content: center; 
+    width: 80%; 
+    margin: 10%; 
 }
 
-.tableau th, td {
-    border: 1px solid;
-    padding: 8px;
-    text-align: center;
-    border-radius: 3px;
+/* Définition des styles pour les éléments th et td (cellules du tableau) dans la classe "tableau" */
+.tableau th, .tableau td {
+    border: 1px solid; 
+    padding: 8px; 
+    text-align: center; 
+    border-radius: 3px; 
 }
 
+/* Définition des styles pour les lignes du tableau (éléments tr) dans la classe "tableau" */
 .tableau tr {
-    font-size: 15px;
-    color: aliceblue;
+    font-size: 15px; 
+    color: aliceblue; 
 }
