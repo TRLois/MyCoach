@@ -1,0 +1,29 @@
+/* header.css */
+header {
+    height: 120px;
+}
+
+header h1 {
+    float: left;
+    margin-top: 32px;
+}
+
+header nav {
+    float: right;
+    margin-top: 50px;
+}
+
+header nav ul {
+    float: left;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+    color: red;
+}

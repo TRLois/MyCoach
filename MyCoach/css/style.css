@@ -53,43 +53,6 @@ a {
     color: #ff7a00;
 }
 
-/* Header */
-
-header
-{
-    height: 120px;
-}
-
-header h1
-{
-    float: left;
-    margin-top: 32px;
-}
-
-header nav
-{
-    float: right;
-    margin-top: 50px;
-}
-
-header nav ul 
-{
-    float: left;
-}
-
-header nav ul li 
-{
-   display: inline-block;
-}
-
-header nav ul li a 
-{
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 20px;
-    color: red;
-}
-
 
 #presentation h1
 {   
@@ -119,25 +82,37 @@ header nav ul li a
     background: #02b8dd;
 }
 
+#activities {
+    width: 1000px;
+    height: auto;
+    align-items: center;
+    margin: 0 auto; /* Cette ligne est ajoutée pour centrer la section */
+    position: relative;
+}
+
 #activities ul {
-    margin: 70px 0;
+    margin: 0px;
+    padding: 0; /* Pour réinitialiser les marges et les rembourrages du ul */
+    display: flex; /* Pour aligner horizontalement les éléments li */
+    flex-wrap: wrap; /* Pour gérer le passage à la ligne des éléments li */
+    justify-content: center; /* Pour centrer horizontalement les éléments li */
 }
 
 #activities ul li
 {
     width: 300px;
-    float: left;
     text-align: center;
-    margin-right: 10px;
+    margin: 10px; /* Ajout d'une marge autour de chaque élément li */
 }
+
 #activities h3
 {
     font-size: 25px;
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
-    padding: 100px 0 40px 0;
-    margin-bottom: 15px;
+    padding: 40px 0 20px 0; /* Ajustement de la marge supérieure et inférieure */
+    margin: 0; /* Réinitialiser les marges */
 }
 
 #activities p
@@ -155,4 +130,5 @@ header nav ul li a
 
 .button-2:hover {
     color: #fff;
+    background: #02b8dd;
 }

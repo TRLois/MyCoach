@@ -1,5 +1,14 @@
 <?php
+
+    session_start();
+
+    if (!isset($_SESSION['user_id'])) {
+        header('Location: login.php');
+    exit();
+}
+
     include("../include/connexionBDD.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -8,6 +17,8 @@
             <meta charset="UTF-8">
             <link rel="stylesheet" href="../css/style.css">
             <link rel="stylesheet" href="../css/styleSeance.css">
+            <link rel="stylesheet" href="../css/styleHeader.css">
+            <link rel="stylesheet" href="../css/styleFooter.css">
             <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Mes séances</title>
@@ -85,6 +96,11 @@
                 ?>
 
             </section>
+
+            <?php
+                    // Inclusion du header sur la page
+                   include("../include/footer.php")
+            ?>
         </body>
     </html>
 </DOCTYPE html>
